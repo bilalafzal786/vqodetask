@@ -3,6 +3,8 @@
   padding: 0;
   font-family: sans-serif;
   font-size: 14px;
+  line-height: 20px;
+
 }
 
 body {
@@ -208,7 +210,7 @@ li.last:after {
   line-height: 32px;
 }
 .colorPara {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
   color: rgb(46, 95, 228);
   line-height: 24px;
@@ -229,6 +231,12 @@ li.last:after {
   color: rgb(46, 95, 228);
   font-style: italic;
   text-decoration: none;
+}
+.input span{
+  font-size: 17px;
+  font-weight: 500;
+  padding-left: 5px;
+
 }
 .fixedContainer{
   position: fixed;
@@ -283,7 +291,7 @@ li.last:after {
 .col {
   padding: 10px;
 }
-.miniTag {
+.miniTag >*:not(.qantasLogo) {
   background-color: rgb(172, 155, 155);
   font-size: 12px;
   padding: 5px;
@@ -291,11 +299,12 @@ li.last:after {
 .headerColorPara {
   font-size: 14px;
   font-weight: 500;
+  padding-left: 8px;
   color: rgb(46, 192, 228);
-  line-height: 24px;
+  line-height: 14px;
 }
 .redHeading {
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 700;
   color: rgb(219, 7, 7);
   line-height: 32px;
@@ -315,8 +324,12 @@ li.last:after {
 }
 
 .corners {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   width: 120px;
+  height: 80px;
   background-color: #ECECEB;
  clip-path: polygon(85% 0, 85% 38%, 98% 54%, 85% 68%, 85% 100%, 0 100%, 19% 50%, 0 0);
 }
@@ -356,7 +369,7 @@ li.last:after {
   padding: 20px;
 }
 .xsPara {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500px;
   color: rgb(49, 48, 48);
 }
@@ -402,6 +415,7 @@ li.last:after {
   border-radius: 30px;
   cursor: pointer;
 }
+
 .btn:hover {
   background-color: rgb(35, 173, 207);
 }
@@ -410,6 +424,17 @@ li.last:after {
   justify-content: end;
   background-color: rgb(208, 240, 248);
   padding: 0 20px 20px 0;
+}
+.roundedPara{
+  background-color: rgb(46, 192, 228);
+  color: white;
+  margin: 30px 0;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
 }
 .info {
   background-color: rgb(208, 240, 248);
@@ -442,8 +467,8 @@ vertical-align: middle;
 .priceRange{
   padding: 10px 20px;
   
-  border-top:2px solid rgb(147, 145, 145);
-  border-bottom:2px solid rgb(147, 145, 145);
+  border-top:2px solid rgb(223, 221, 221);
+  border-bottom:2px solid rgb(223, 221, 221);
   border-left: 0;
   border-right: none;
   margin: 15px 0;
@@ -460,7 +485,7 @@ color: rgb(77, 73, 73);
 }
 .optionsContainer{
   padding: 20px;
-  border-top: 2px solid rgb(147, 145, 145);
+  border-top: 2px solid rgb(203, 200, 200);
  
 
 }
@@ -493,4 +518,12 @@ color: rgb(77, 73, 73);
 .flexBetween{
   display: flex;
   justify-content: space-between;
+}
+.qantasLogo{
+  width: 40px;
+  height: 20px;
+}
+.virginLogo{
+   width: 60px;
+  height: 30px;
 }
