@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: rgb(218, 218, 200);
+  background-color: #F5F5F5;
 }
 .container {
   width: 90%;
@@ -32,7 +32,7 @@ body {
 
 /*************************  Navbar*********************/
 nav {
-  background-color: rgb(38, 38, 249);
+  background-color: #1b2861;
 }
 .linksContainer{
     display: flex;
@@ -52,8 +52,8 @@ nav {
   color: rgb(229, 234, 237);
 }
 .linksContainer a {
-  color: rgb(8, 246, 131);
-  font-size: 24px;
+  color: #1B9068;
+  font-size: 16px;
 
   font-weight: 500;
   text-decoration: none;
@@ -102,10 +102,11 @@ ul.chevronbar {
   overflow: hidden;
 }
 
+
 ul.chevronbar li {
   vertical-align: top;
   position: relative;
-  background: rgb(182, 189, 188);
+  background: #D1D2D4;
   color: rgb(101, 96, 96);
   display: inline;
   border: none;
@@ -117,10 +118,13 @@ ul.chevronbar li {
   padding-right: 0.7em;
 }
 
+
 ul.chevronbar li a {
   text-decoration: none;
   padding: 0.5em;
   color: rgb(104, 101, 101);
+ 
+
 }
 
 ul.chevronbar li:before,
@@ -138,43 +142,43 @@ ul.chevronbar li:after {
 }
 
 ul.chevronbar li:before {
-  border-top-color: rgb(182, 189, 188);
-  border-bottom-color: rgb(182, 189, 188);
-  border-right-color: rgb(182, 189, 188);
+  border-top-color: #D1D2D4;
+  border-bottom-color: #D1D2D4;
+  border-right-color: #D1D2D4;
   right: 100%;
 }
 
 ul.chevronbar li:after {
-  border-left-color: rgb(182, 189, 188);
+  border-left-color: #D1D2D4;
   left: 100%;
   margin-left: -0.01em;
 }
 
 ul.chevronbar li.first{
   padding-left: 0.5em;
-  background: rgb(5, 165, 165);
+  background: #41C0C8;
 }
 ul.chevronbar li.center{
-  background: rgb(5, 165, 165);
+  background: #41C0C8;
 }
 ul.chevronbar li.center a{
     color: white;
 
 }
 ul.chevronbar li.center::after{
-   border-left-color: rgb(5, 165, 165);
+   border-left-color: #41C0C8;
 
 }
 ul.chevronbar li.center::before{
-   border-right-color: rgb(5, 165, 165);
-   border-top-color: rgb(5, 165, 165);
-   border-bottom-color: rgb(5, 165, 165);
+   border-right-color: #41C0C8;
+   border-top-color: #41C0C8;
+   border-bottom-color: #41C0C8;
 
 
 }
 
 ul.chevronbar li.first::after{
-   border-left-color: rgb(5, 165, 165);
+   border-left-color: #41C0C8;
 
 }
 li.first:before {
@@ -285,7 +289,7 @@ li.last:after {
   padding: 5px;
 }
 .headerColorPara {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
   color: rgb(46, 192, 228);
   line-height: 24px;
@@ -313,17 +317,8 @@ li.last:after {
 .corners {
   text-align: center;
   width: 120px;
-  background-color: rgb(200, 207, 207);
-  clip-path: polygon(
-    85% 0,
-    85% 42%,
-    100% 50%,
-    85% 59%,
-    85% 100%,
-    0 100%,
-    17% 51%,
-    0 0
-  );
+  background-color: #ECECEB;
+ clip-path: polygon(85% 0, 85% 38%, 98% 54%, 85% 68%, 85% 100%, 0 100%, 19% 50%, 0 0);
 }
 .flex {
   display: flex;
@@ -403,7 +398,7 @@ li.last:after {
   color: white;
   padding: 10px 25px;
   border: none;
-  min-width: 250px;
+  min-width: 220px;
   border-radius: 30px;
   cursor: pointer;
 }
@@ -437,13 +432,22 @@ li.last:after {
     flex-direction: column;
     gap:10px
 }
+.chveImage{
+  margin: 0 10px;
+display: inline;
+vertical-align: middle;
+}
 
 /**********************Price Range***********************/
 .priceRange{
   padding: 10px 20px;
+  
   border-top:2px solid rgb(147, 145, 145);
   border-bottom:2px solid rgb(147, 145, 145);
+  border-left: 0;
+  border-right: none;
   margin: 15px 0;
+  background-color: #EFEFEF;
 
 }
 .priceRange:focus{
